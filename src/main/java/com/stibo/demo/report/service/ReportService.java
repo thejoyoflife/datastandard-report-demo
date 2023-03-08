@@ -23,6 +23,11 @@ public class ReportService {
 
     @LogTime
     public Stream<Stream<String>> report(Datastandard datastandard, String categoryId) {
+    	if (datastandard == null || datastandard.getCategories() == null
+    			|| datastandard.getAttributes() == null || datastandard.getAttributeGroups() == null) {
+    		return Stream.empty();
+    	}
+    	
     	var categoryMap = prepareCategoryMap(datastandard.getCategories());
     	var attributeMap = prepareAttributeMap(datastandard.getAttributes());
     	var attributeGroupMap = prepareAttributeGroupMap(datastandard.getAttributeGroups());
