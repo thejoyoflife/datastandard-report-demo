@@ -31,9 +31,15 @@ public class ReportService {
     	var categoryMap = prepareCategoryMap(datastandard.getCategories());
     	var attributeMap = prepareAttributeMap(datastandard.getAttributes());
     	var attributeGroupMap = prepareAttributeGroupMap(datastandard.getAttributeGroups());
-    	
-    	return categoryStream(categoryId, categoryMap)
-    			.flatMap(c -> transformCategory(c, attributeMap, attributeGroupMap));    	
+
+    	var headerStream = Stream.of(includeHeader());
+    	var dataStream = categoryStream(categoryId, categoryMap)
+    											.flatMap(c -> transformCategory(c, attributeMap, attributeGroupMap));    	
+    	return Stream.concat(headerStream, dataStream);
+    }
+
+    private Stream<String> includeHeader() {
+    	return Stream.of("Category Name", "Attribute Name", "Description", "Type", "Groups");
     }
     
     private Stream<Stream<String>> transformCategory(Category category, Map<String, Attribute> attrMap,
@@ -77,8 +83,8 @@ public class ReportService {
     private String attributeGroups(Attribute attr, Map<String, AttributeGroup> attrGroupMap) {
     	return attr.getGroupIds()
     				.stream()
-    				.map(agid -> attrGroupMap.get(agid))
-    				.map(ag -> ag.getName())
+    				.map(attrGroupMap::get)
+    				.map(AttributeGroup::getName)
     				.collect(joining("\n"));
     }
     
