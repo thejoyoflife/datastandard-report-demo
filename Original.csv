@@ -1,0 +1,66 @@
+Category Name,Attribute Name,Description,Type,Groups
+root,Primary image*,Primary image of the product.,asset,Assets
+root,Product Title,A descriptive title used for SEO and displayed in prominent locations. No more than 200 charachters allowed.,string,"Ungrouped attributes
+List view
+Attribute filter"
+root,Brand Logo,"Image displaying logo of the product brand. Min size restriction is 100x100, max size restriction 300x300",asset,Assets
+root,Description*,A detailed description of the product. This will be presented to the customer on the webshop and in marketing material. No more than 300 charachters allowed.,string,"Ungrouped attributes
+List view
+Attribute filter"
+root,Multilanguage Description,Multilangual detailed description of the product.,string,"Ungrouped attributes
+List view"
+root,Production year,The year the product was produced.,integer[],Ungrouped attributes
+root,Select your Home Depot Online Merchant/Category,Please select a Merchant/Category if you want a specific Merchant to review your products once submitted.,string,Ungrouped attributes
+root,Price,Enter the price of the product. Remember to fill out the currency column.,decimal,"Payment options
+List view"
+root,Currency,Please select the correct currency from the list.,string,"Payment options
+List view"
+root,Material breakdown,"Materials included in the product, please specify the type and amount.","composite{
+  Material*: string
+  Material amount*: decimal
+  Material features: string[]
+  Material image: asset
+  Material notes: string
+  Material details: composite{
+    Description: string
+    Secondary image: asset
+  }[]
+}[]",Ungrouped attributes
+root,Sellable in store*,Choose whether or not the product is sellable in the physical store.,string,Payment options
+root,Sellable online*,Choose whether or not the product is sellable on the webshop.,string,Payment options
+root,Sellable from,Please enter a date that you want the product to be available from. No value means that is should be available now.,date,Ungrouped attributes
+root,Promotional dates,Please input the dates that the product is allowed promotions and / or discounts.,date[],Ungrouped attributes
+root,Country of origin*,"Select a country from the list. If the wanted country is not on the list, select other. ",string,"Ungrouped attributes
+List view"
+root,Front*,Image displaying front of product.,asset,Assets
+root,Back,Image displaying back of product.,asset,Assets
+root,Detail,Image displaying a detail of product.,asset[],Assets
+root,Context,Image displaying the product in context.,asset[],Assets
+root,GLN,Enter GLN for supplier.,gtin,"Ungrouped attributes
+Packaging Identifiers"
+root,Packaging Path,"Composite attribute containing information on your packaging structure. This is only usable if you have a flat packaging structure, otherwise please use the Package content attribute.","packaging{
+  Quantity*: integer
+  GTIN*: gtin
+  Gross Weight (lb)*: decimal
+  Height (in)*: decimal
+  Depth (in)*: decimal
+  Width (in)*: decimal
+  Dangerous content?: string
+  Packaging level*: string
+  Sellable Unit?: string
+}[]",Ungrouped attributes
+root,Substituted by,Reference to a product that substitute the current product in case of supply shortage.,reference[],Ungrouped attributes
+root,GTIN,Global Trade Item Number (GTIN),gtin,"Ungrouped attributes
+Attribute filter
+Packaging Identifiers
+List of attributes that can be used as identifiers in retrieval process."
+root,Primary image*,Primary image of the product.,asset,Assets
+root,Submission outcome,Used for testing - specify the outcome of you submission.,string,Ungrouped attributes
+root,Submission message,Used for testing - specify the error message upon submission.,string,Ungrouped attributes
+Clothing,Style ID*,Enter the style ID of the product. This value is used to group clothing according to their family.,integer,Ungrouped attributes
+Clothing,Color*,Select the color that matches the product best from the list.,string,"Ungrouped attributes
+List view"
+Clothing,Size*,Select a size from the list.,string,Ungrouped attributes
+Shirts,Chest,Measurement from one armpit to the other.,fraction,Sizeguide
+Shirts,Length,Measurement from the top to the bottom.,fraction[],Sizeguide
+Shirts,Shoulder,Measurement from one shoulder to the other,fraction,Sizeguide
