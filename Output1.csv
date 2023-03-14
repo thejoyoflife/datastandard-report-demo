@@ -22,7 +22,25 @@ root,Price,Enter the price of the product. Remember to fill out the currency col
 List view"
 root,Currency,Please select the correct currency from the list.,string,"Payment options
 List view"
-root,Material breakdown,"Materials included in the product, please specify the type and amount.",composite[],Ungrouped attributes
+root,Material breakdown,"Materials included in the product, please specify the type and amount.","composite{
+  Material*: string
+  Material amount*: decimal
+  Material features: string[]
+  Material image: asset
+  Material notes: string
+  Material details: composite{
+  Description: string
+  Secondary image: asset
+  Material Details Type: composite{
+  Applicability: string
+  Note: string
+}[]
+}[]
+  Material Properties: composite{
+  Property Name: string
+  Property Value: string
+}[]
+}[]",Ungrouped attributes
 root,Sellable in store*,Choose whether or not the product is sellable in the physical store.,string,Payment options
 root,Sellable online*,Choose whether or not the product is sellable on the webshop.,string,Payment options
 root,Sellable from,Please enter a date that you want the product to be available from. No value means that is should be available now.,date,Ungrouped attributes
@@ -35,7 +53,17 @@ root,Detail,Image displaying a detail of product.,asset[],Assets
 root,Context,Image displaying the product in context.,asset[],Assets
 root,GLN,Enter GLN for supplier.,gtin,"Ungrouped attributes
 Packaging Identifiers"
-root,Packaging Path,"Composite attribute containing information on your packaging structure. This is only usable if you have a flat packaging structure, otherwise please use the Package content attribute.",packaging[],Ungrouped attributes
+root,Packaging Path,"Composite attribute containing information on your packaging structure. This is only usable if you have a flat packaging structure, otherwise please use the Package content attribute.","packaging{
+  Quantity*: integer
+  GTIN*: gtin
+  Gross Weight (lb)*: decimal
+  Height (in)*: decimal
+  Depth (in)*: decimal
+  Width (in)*: decimal
+  Dangerous content?: string
+  Packaging level*: string
+  Sellable Unit?: string
+}[]",Ungrouped attributes
 root,Substituted by,Reference to a product that substitute the current product in case of supply shortage.,reference[],Ungrouped attributes
 root,GTIN,Global Trade Item Number (GTIN),gtin,"Ungrouped attributes
 Attribute filter
