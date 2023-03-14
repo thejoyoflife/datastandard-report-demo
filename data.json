@@ -1,0 +1,3426 @@
+{
+    "id": "acme",
+    "name": "ACME",
+    "versionId": "acme-10",
+    "categories": [
+        {
+            "id": "root",
+            "name": "root",
+            "description": null,
+            "leaf": false,
+            "parentId": null,
+            "attributeLinks": [
+                {
+                    "id": "PRIMARY_ASSET",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "PRODUCT_TITLE",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "ASSET_BRAND_LOGO",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "DESCRIPTION",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "VARIANT"
+                },
+                {
+                    "id": "DESCRIPTION_ML",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "PRODUCTION_YEAR",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MERCHANT_CATEGORY",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "PRICE",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "CURRENCY",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MATERIAL_BREAKDOWN",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "FAMILY"
+                },
+                {
+                    "id": "SELLABLE_IN_STORE",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "FAMILY"
+                },
+                {
+                    "id": "SELLABLE_ONLINE",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "FAMILY"
+                },
+                {
+                    "id": "SELLABLE_FROM",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "PROMOTIONAL_DATES",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "COUNTRY_OF_ORIGIN",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "ASSET_FRONT",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "VARIANT"
+                },
+                {
+                    "id": "ASSET_BACK",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "VARIANT"
+                },
+                {
+                    "id": "ASSET_DETAIL",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "VARIANT"
+                },
+                {
+                    "id": "ASSET_CONTEXT",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "VARIANT"
+                },
+                {
+                    "id": "GLN",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "PACKAGING_PATH",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "SUBSTITUTED_BY",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "VARIANT"
+                },
+                {
+                    "id": "GTIN",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "PRIMARY_ASSET",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "DEFAULT_SUBMIT_OUTCOME_ID",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "DEFAULT_SUBMIT_MESSAGE_ID",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "ACCOUNT_DISCRIMINATOR",
+                    "optional": null,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ]
+        },
+        {
+            "id": "CLOTHING",
+            "name": "Clothing",
+            "description": null,
+            "leaf": false,
+            "parentId": "root",
+            "attributeLinks": [
+                {
+                    "id": "STYLE_ID",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "FAMILY"
+                },
+                {
+                    "id": "COLOR",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "VARIANT"
+                },
+                {
+                    "id": "SIZE",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "VARIANT"
+                }
+            ]
+        },
+        {
+            "id": "ACCESSORIES",
+            "name": "Accessories",
+            "description": null,
+            "leaf": false,
+            "parentId": "CLOTHING",
+            "attributeLinks": [
+                {
+                    "id": "COUNTRY_OF_ORIGIN",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ]
+        },
+        {
+            "id": "FOOTWEAR",
+            "name": "Footwear",
+            "description": null,
+            "leaf": true,
+            "parentId": "CLOTHING",
+            "attributeLinks": [
+                {
+                    "id": "COUNTRY_OF_ORIGIN",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ]
+        },
+        {
+            "id": "HATS_AND_CAPS",
+            "name": "Hats & caps",
+            "description": null,
+            "leaf": true,
+            "parentId": "ACCESSORIES",
+            "attributeLinks": [
+                {
+                    "id": "MERCHANT_CATEGORY",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ]
+        },
+        {
+            "id": "BAGS",
+            "name": "Bags",
+            "description": null,
+            "leaf": false,
+            "parentId": "ACCESSORIES",
+            "attributeLinks": []
+        },
+        {
+            "id": "SHOULDERBAGS",
+            "name": "Shoulderbags",
+            "description": null,
+            "leaf": true,
+            "parentId": "BAGS",
+            "attributeLinks": []
+        },
+        {
+            "id": "BAGPACKS",
+            "name": "Bagpacks",
+            "description": null,
+            "leaf": true,
+            "parentId": "BAGS",
+            "attributeLinks": []
+        },
+        {
+            "id": "SUNGLASSES",
+            "name": "Sunglasses",
+            "description": null,
+            "leaf": true,
+            "parentId": "ACCESSORIES",
+            "attributeLinks": []
+        },
+        {
+            "id": "JEWELLERY",
+            "name": "Jewellery",
+            "description": null,
+            "leaf": true,
+            "parentId": "ACCESSORIES",
+            "attributeLinks": [
+                {
+                    "id": "COLOR",
+                    "optional": false,
+                    "listOfValuesFilter": [
+                        "Black",
+                        "White"
+                    ],
+                    "appliesTo": "ALL"
+                }
+            ]
+        },
+        {
+            "id": "WATCHES",
+            "name": "Watches",
+            "description": null,
+            "leaf": false,
+            "parentId": "ACCESSORIES",
+            "attributeLinks": []
+        },
+        {
+            "id": "ANALOG",
+            "name": "Analog",
+            "description": null,
+            "leaf": true,
+            "parentId": "WATCHES",
+            "attributeLinks": []
+        },
+        {
+            "id": "DIGITAL",
+            "name": "Digital",
+            "description": null,
+            "leaf": true,
+            "parentId": "WATCHES",
+            "attributeLinks": []
+        },
+        {
+            "id": "SHIRTS",
+            "name": "Shirts",
+            "description": null,
+            "leaf": false,
+            "parentId": "CLOTHING",
+            "attributeLinks": [
+                {
+                    "id": "MEASURE_CHEST",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MEASURE_LENGTH",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MEASURE_SHOULDER",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ]
+        },
+        {
+            "id": "T_SHIRTS",
+            "name": "T-shirts",
+            "description": null,
+            "leaf": false,
+            "parentId": "SHIRTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "PATTERN",
+            "name": "Pattern",
+            "description": null,
+            "leaf": true,
+            "parentId": "T_SHIRTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "PRINT",
+            "name": "Print",
+            "description": null,
+            "leaf": true,
+            "parentId": "T_SHIRTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "PLAIN",
+            "name": "Plain",
+            "description": null,
+            "leaf": true,
+            "parentId": "T_SHIRTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "PANTS",
+            "name": "Pants",
+            "description": null,
+            "leaf": false,
+            "parentId": "CLOTHING",
+            "attributeLinks": []
+        },
+        {
+            "id": "JEANS",
+            "name": "Jeans",
+            "description": null,
+            "leaf": true,
+            "parentId": "PANTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "SHORTS",
+            "name": "Shorts",
+            "description": null,
+            "leaf": true,
+            "parentId": "PANTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "DRESS",
+            "name": "Dress",
+            "description": null,
+            "leaf": true,
+            "parentId": "PANTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "SWEATSHIRTS",
+            "name": "Sweatshirts",
+            "description": null,
+            "leaf": true,
+            "parentId": "SHIRTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "JACKETS_AND_COATS",
+            "name": "Jackets & coats",
+            "description": null,
+            "leaf": false,
+            "parentId": "CLOTHING",
+            "attributeLinks": [
+                {
+                    "id": "MEASURE_CHEST",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MEASURE_LENGTH",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MEASURE_SHOULDER",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ]
+        },
+        {
+            "id": "WINTERJACKETS",
+            "name": "Winterjackets",
+            "description": null,
+            "leaf": true,
+            "parentId": "JACKETS_AND_COATS",
+            "attributeLinks": []
+        },
+        {
+            "id": "ELECTRONICS",
+            "name": "Electronics",
+            "description": null,
+            "leaf": false,
+            "parentId": "root",
+            "attributeLinks": []
+        },
+        {
+            "id": "TV_PHOTO_AND_SOUND",
+            "name": "TV, photo and sound",
+            "description": null,
+            "leaf": false,
+            "parentId": "ELECTRONICS",
+            "attributeLinks": []
+        },
+        {
+            "id": "SYSTEMS_AND_SPEAKERS",
+            "name": "Systems and speakers",
+            "description": null,
+            "leaf": true,
+            "parentId": "TV_PHOTO_AND_SOUND",
+            "attributeLinks": []
+        },
+        {
+            "id": "DVD_AND_BLU-RAY_PLAYERS",
+            "name": "DVD and Blu-Ray players",
+            "description": null,
+            "leaf": true,
+            "parentId": "TV_PHOTO_AND_SOUND",
+            "attributeLinks": []
+        },
+        {
+            "id": "HEADPHONES",
+            "name": "Headphones",
+            "description": null,
+            "leaf": true,
+            "parentId": "TV_PHOTO_AND_SOUND",
+            "attributeLinks": []
+        },
+        {
+            "id": "CAMERA_AND_ACCESSORIES",
+            "name": "Camera and accessories",
+            "description": null,
+            "leaf": true,
+            "parentId": "TV_PHOTO_AND_SOUND",
+            "attributeLinks": []
+        },
+        {
+            "id": "MUSIC",
+            "name": "Music",
+            "description": null,
+            "leaf": true,
+            "parentId": "TV_PHOTO_AND_SOUND",
+            "attributeLinks": []
+        },
+        {
+            "id": "TV",
+            "name": "TV",
+            "description": null,
+            "leaf": true,
+            "parentId": "TV_PHOTO_AND_SOUND",
+            "attributeLinks": []
+        },
+        {
+            "id": "TV_ACCESSORIES",
+            "name": "TV accessories",
+            "description": null,
+            "leaf": true,
+            "parentId": "TV_PHOTO_AND_SOUND",
+            "attributeLinks": []
+        },
+        {
+            "id": "COMPUTERS_AND_GAMING",
+            "name": "Computers and gaming",
+            "description": null,
+            "leaf": false,
+            "parentId": "ELECTRONICS",
+            "attributeLinks": []
+        },
+        {
+            "id": "COMPUTERS",
+            "name": "Computers",
+            "description": null,
+            "leaf": true,
+            "parentId": "COMPUTERS_AND_GAMING",
+            "attributeLinks": []
+        },
+        {
+            "id": "COMPUTER_ACCESSORIES",
+            "name": "Computer accessories",
+            "description": null,
+            "leaf": true,
+            "parentId": "COMPUTERS_AND_GAMING",
+            "attributeLinks": []
+        },
+        {
+            "id": "HARD_DRIVES_AND_HARDWARE",
+            "name": "Hard drives and hardware",
+            "description": null,
+            "leaf": true,
+            "parentId": "COMPUTERS_AND_GAMING",
+            "attributeLinks": []
+        },
+        {
+            "id": "TABLETS",
+            "name": "Tablets",
+            "description": null,
+            "leaf": true,
+            "parentId": "COMPUTERS_AND_GAMING",
+            "attributeLinks": []
+        },
+        {
+            "id": "CONSOLES_AND_GAMES",
+            "name": "Consoles and games",
+            "description": null,
+            "leaf": true,
+            "parentId": "COMPUTERS_AND_GAMING",
+            "attributeLinks": []
+        },
+        {
+            "id": "PRINTERS_AND_INK",
+            "name": "Printers and Ink",
+            "description": null,
+            "leaf": true,
+            "parentId": "COMPUTERS_AND_GAMING",
+            "attributeLinks": []
+        },
+        {
+            "id": "ROUTERS_AND_NETWORKS",
+            "name": "Routers and networks",
+            "description": null,
+            "leaf": true,
+            "parentId": "COMPUTERS_AND_GAMING",
+            "attributeLinks": []
+        },
+        {
+            "id": "HOUSEHOLD",
+            "name": "Household",
+            "description": null,
+            "leaf": false,
+            "parentId": "ELECTRONICS",
+            "attributeLinks": []
+        },
+        {
+            "id": "BABY_MONITORS",
+            "name": "Baby Monitors",
+            "description": null,
+            "leaf": true,
+            "parentId": "HOUSEHOLD",
+            "attributeLinks": []
+        },
+        {
+            "id": "BATTERIES",
+            "name": "Batteries",
+            "description": null,
+            "leaf": true,
+            "parentId": "HOUSEHOLD",
+            "attributeLinks": []
+        },
+        {
+            "id": "HOUSEHOLD_APPLIANCES",
+            "name": "Household Appliances",
+            "description": null,
+            "leaf": true,
+            "parentId": "HOUSEHOLD",
+            "attributeLinks": []
+        },
+        {
+            "id": "COFFEE_AND_ESPRESSO_MACHINES",
+            "name": "Coffee and espresso machines",
+            "description": null,
+            "leaf": true,
+            "parentId": "HOUSEHOLD",
+            "attributeLinks": []
+        },
+        {
+            "id": "COMBINE_AND_MICROWAVE_OVENS",
+            "name": "Combine and microwave ovens",
+            "description": null,
+            "leaf": true,
+            "parentId": "HOUSEHOLD",
+            "attributeLinks": []
+        },
+        {
+            "id": "KITCHEN_APPLIANCES",
+            "name": "Kitchen appliances",
+            "description": null,
+            "leaf": true,
+            "parentId": "HOUSEHOLD",
+            "attributeLinks": []
+        },
+        {
+            "id": "IRONING_AND_CLEANING",
+            "name": "Ironing and cleaning",
+            "description": null,
+            "leaf": true,
+            "parentId": "HOUSEHOLD",
+            "attributeLinks": []
+        },
+        {
+            "id": "VACUUM_CLEANERS",
+            "name": "Vacuum Cleaners",
+            "description": null,
+            "leaf": true,
+            "parentId": "HOUSEHOLD",
+            "attributeLinks": []
+        },
+        {
+            "id": "CLOCKS_AND_WEATHER_STATIONS",
+            "name": "Clocks and weather stations",
+            "description": null,
+            "leaf": true,
+            "parentId": "HOUSEHOLD",
+            "attributeLinks": []
+        },
+        {
+            "id": "PHONE_AND_GPS",
+            "name": "Phone and GPS",
+            "description": null,
+            "leaf": false,
+            "parentId": "ELECTRONICS",
+            "attributeLinks": []
+        },
+        {
+            "id": "CELL_PHONES",
+            "name": "Cell phones",
+            "description": null,
+            "leaf": true,
+            "parentId": "PHONE_AND_GPS",
+            "attributeLinks": []
+        },
+        {
+            "id": "ACTIVITY_TRACTORS_RUNNING_RIDES_AND_GPS",
+            "name": "Activity tractors, running rides and GPS",
+            "description": null,
+            "leaf": true,
+            "parentId": "PHONE_AND_GPS",
+            "attributeLinks": []
+        },
+        {
+            "id": "PHONE_ACCESSORIES",
+            "name": "Phone Accessories",
+            "description": null,
+            "leaf": true,
+            "parentId": "PHONE_AND_GPS",
+            "attributeLinks": []
+        },
+        {
+            "id": "POWER_BANKS",
+            "name": "Power Banks",
+            "description": null,
+            "leaf": true,
+            "parentId": "PHONE_AND_GPS",
+            "attributeLinks": []
+        },
+        {
+            "id": "SMARTWATCHES",
+            "name": "Smartwatches",
+            "description": null,
+            "leaf": true,
+            "parentId": "PHONE_AND_GPS",
+            "attributeLinks": []
+        },
+        {
+            "id": "HOUSING",
+            "name": "Housing",
+            "description": null,
+            "leaf": false,
+            "parentId": "root",
+            "attributeLinks": []
+        },
+        {
+            "id": "TOOLS",
+            "name": "Tools",
+            "description": null,
+            "leaf": true,
+            "parentId": "HOUSING",
+            "attributeLinks": []
+        },
+        {
+            "id": "FURNITURE",
+            "name": "Furniture",
+            "description": null,
+            "leaf": false,
+            "parentId": "HOUSING",
+            "attributeLinks": []
+        },
+        {
+            "id": "TABLES",
+            "name": "Tables",
+            "description": null,
+            "leaf": true,
+            "parentId": "FURNITURE",
+            "attributeLinks": []
+        },
+        {
+            "id": "CHILDRENS_FURNITURE",
+            "name": "Children's furniture",
+            "description": null,
+            "leaf": true,
+            "parentId": "FURNITURE",
+            "attributeLinks": []
+        },
+        {
+            "id": "HALLWAY_FURNITURE",
+            "name": "Hallway Furniture",
+            "description": null,
+            "leaf": true,
+            "parentId": "FURNITURE",
+            "attributeLinks": []
+        },
+        {
+            "id": "FURNITURE_CARE",
+            "name": "Furniture care",
+            "description": null,
+            "leaf": true,
+            "parentId": "FURNITURE",
+            "attributeLinks": []
+        },
+        {
+            "id": "STORAGE",
+            "name": "Storage",
+            "description": null,
+            "leaf": true,
+            "parentId": "FURNITURE",
+            "attributeLinks": []
+        },
+        {
+            "id": "BEDS_AND_MATTRESSES",
+            "name": "Beds and mattresses",
+            "description": null,
+            "leaf": true,
+            "parentId": "FURNITURE",
+            "attributeLinks": []
+        },
+        {
+            "id": "COUCHES",
+            "name": "Couches",
+            "description": null,
+            "leaf": true,
+            "parentId": "FURNITURE",
+            "attributeLinks": []
+        },
+        {
+            "id": "DINING_TABLES",
+            "name": "Dining tables",
+            "description": null,
+            "leaf": true,
+            "parentId": "FURNITURE",
+            "attributeLinks": []
+        },
+        {
+            "id": "CHAIRS",
+            "name": "Chairs",
+            "description": null,
+            "leaf": true,
+            "parentId": "FURNITURE",
+            "attributeLinks": []
+        },
+        {
+            "id": "BEANBAGS",
+            "name": "Beanbags",
+            "description": null,
+            "leaf": true,
+            "parentId": "FURNITURE",
+            "attributeLinks": []
+        },
+        {
+            "id": "INTERIOR_DECORATION_AND_TEXTILE",
+            "name": "Interior decoration and textile",
+            "description": null,
+            "leaf": false,
+            "parentId": "HOUSING",
+            "attributeLinks": []
+        },
+        {
+            "id": "BATH_MATS",
+            "name": "Bath mats",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "LIGHTING",
+            "name": "Lighting",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "GALLERY_AND_HANDICRAFTS",
+            "name": "Gallery and handicrafts",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "TABLECLOTHS_AND_TABLECLOTHS",
+            "name": "Tablecloths and tablecloths",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "BLANKETS_AND_PILLOWS",
+            "name": "Blankets and pillows",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "CURTAINS",
+            "name": "Curtains",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "GLASSES_AND_WHITEBOARDS",
+            "name": "Glasses and whiteboards",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "TOWELS",
+            "name": "Towels",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "INTERIOR_PAINTING",
+            "name": "Interior Painting",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "KITCHEN_TEXTILES",
+            "name": "kitchen Textiles",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "CUSHIONS",
+            "name": "Cushions",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "LINEN_AND_SHEETS",
+            "name": "Linen and sheets",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "SEW_KNIT_&_CROCHET",
+            "name": "Sew, Knit & Crochet",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "RUGS_SKINS_AND_PLAIDS",
+            "name": "Rugs, skins and plaids",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "WALL_CLOCKS",
+            "name": "Wall clocks",
+            "description": null,
+            "leaf": true,
+            "parentId": "INTERIOR_DECORATION_AND_TEXTILE",
+            "attributeLinks": []
+        },
+        {
+            "id": "KITCHENWARE_AND_BATHROOM",
+            "name": "Kitchenware and bathroom",
+            "description": null,
+            "leaf": false,
+            "parentId": "HOUSING",
+            "attributeLinks": []
+        },
+        {
+            "id": "BATHROOM_ACCESSORIES",
+            "name": "Bathroom Accessories",
+            "description": null,
+            "leaf": true,
+            "parentId": "KITCHENWARE_AND_BATHROOM",
+            "attributeLinks": []
+        },
+        {
+            "id": "BAKING_AND_DISHES",
+            "name": "Baking and dishes",
+            "description": null,
+            "leaf": true,
+            "parentId": "KITCHENWARE_AND_BATHROOM",
+            "attributeLinks": []
+        },
+        {
+            "id": "CUTLERY_AND_SERVICE",
+            "name": "Cutlery and service",
+            "description": null,
+            "leaf": true,
+            "parentId": "KITCHENWARE_AND_BATHROOM",
+            "attributeLinks": []
+        },
+        {
+            "id": "ELECTRIC_APPLIANCES",
+            "name": "Electric appliances",
+            "description": null,
+            "leaf": true,
+            "parentId": "KITCHENWARE_AND_BATHROOM",
+            "attributeLinks": []
+        },
+        {
+            "id": "GLASS_BOWLS_AND_CHINA",
+            "name": "Glass, bowls and china",
+            "description": null,
+            "leaf": true,
+            "parentId": "KITCHENWARE_AND_BATHROOM",
+            "attributeLinks": []
+        },
+        {
+            "id": "POTS_AND_PANS",
+            "name": "Pots and pans",
+            "description": null,
+            "leaf": true,
+            "parentId": "KITCHENWARE_AND_BATHROOM",
+            "attributeLinks": []
+        },
+        {
+            "id": "KITCHEN_CONTAINERS",
+            "name": "Kitchen Containers",
+            "description": null,
+            "leaf": true,
+            "parentId": "KITCHENWARE_AND_BATHROOM",
+            "attributeLinks": []
+        },
+        {
+            "id": "UTENSILS",
+            "name": "Utensils",
+            "description": null,
+            "leaf": true,
+            "parentId": "KITCHENWARE_AND_BATHROOM",
+            "attributeLinks": []
+        },
+        {
+            "id": "IRONING_AND_SINK",
+            "name": "Ironing and sink",
+            "description": null,
+            "leaf": true,
+            "parentId": "KITCHENWARE_AND_BATHROOM",
+            "attributeLinks": []
+        },
+        {
+            "id": "GARDEN",
+            "name": "Garden",
+            "description": null,
+            "leaf": false,
+            "parentId": "root",
+            "attributeLinks": []
+        },
+        {
+            "id": "GARDEN_MACHINES_AND_TOOLS",
+            "name": "Garden machines and tools",
+            "description": null,
+            "leaf": false,
+            "parentId": "GARDEN",
+            "attributeLinks": []
+        },
+        {
+            "id": "LAWNMOWERS",
+            "name": "Lawnmowers",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_MACHINES_AND_TOOLS",
+            "attributeLinks": []
+        },
+        {
+            "id": "ROBOTIC_MOWERS",
+            "name": "Robotic mowers",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_MACHINES_AND_TOOLS",
+            "attributeLinks": []
+        },
+        {
+            "id": "STRING_TRIMMERS",
+            "name": "String Trimmers",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_MACHINES_AND_TOOLS",
+            "attributeLinks": []
+        },
+        {
+            "id": "HEDGE",
+            "name": "Hedge",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_MACHINES_AND_TOOLS",
+            "attributeLinks": []
+        },
+        {
+            "id": "GARDEN_TRACTORS",
+            "name": "Garden Tractors",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_MACHINES_AND_TOOLS",
+            "attributeLinks": []
+        },
+        {
+            "id": "SWEEPERS",
+            "name": "Sweepers",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_MACHINES_AND_TOOLS",
+            "attributeLinks": []
+        },
+        {
+            "id": "CHAINSAWS",
+            "name": "Chainsaws",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_MACHINES_AND_TOOLS",
+            "attributeLinks": []
+        },
+        {
+            "id": "WOOD",
+            "name": "Wood",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_MACHINES_AND_TOOLS",
+            "attributeLinks": []
+        },
+        {
+            "id": "LEAF_BLOWERS",
+            "name": "Leaf Blowers",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_MACHINES_AND_TOOLS",
+            "attributeLinks": []
+        },
+        {
+            "id": "SHREDDERS",
+            "name": "Shredders",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_MACHINES_AND_TOOLS",
+            "attributeLinks": []
+        },
+        {
+            "id": "PUMPS",
+            "name": "Pumps",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_MACHINES_AND_TOOLS",
+            "attributeLinks": []
+        },
+        {
+            "id": "GARDEN_TOOLS",
+            "name": "Garden Tools",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_MACHINES_AND_TOOLS",
+            "attributeLinks": []
+        },
+        {
+            "id": "ACCESSORIES_FOR_GARDEN_MACHINES",
+            "name": "Accessories for garden machines",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_MACHINES_AND_TOOLS",
+            "attributeLinks": []
+        },
+        {
+            "id": "DECORATION_AND_PLANTS",
+            "name": "Decoration and Plants",
+            "description": null,
+            "leaf": false,
+            "parentId": "GARDEN",
+            "attributeLinks": []
+        },
+        {
+            "id": "FLOWER_BULBS_AND_SEEDS",
+            "name": "Flower bulbs and seeds",
+            "description": null,
+            "leaf": true,
+            "parentId": "DECORATION_AND_PLANTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "VARIOUS_GARDEN_FURNITURE",
+            "name": "Various garden furniture",
+            "description": null,
+            "leaf": true,
+            "parentId": "DECORATION_AND_PLANTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "GREENHOUSES_AND_ACCESSORIES",
+            "name": "Greenhouses and accessories",
+            "description": null,
+            "leaf": true,
+            "parentId": "DECORATION_AND_PLANTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "FLAG_AND_FLAGPOLES",
+            "name": "Flag and flagpoles",
+            "description": null,
+            "leaf": true,
+            "parentId": "DECORATION_AND_PLANTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "FENCE_AND_FORECLOSURE",
+            "name": "Fence and foreclosure",
+            "description": null,
+            "leaf": true,
+            "parentId": "DECORATION_AND_PLANTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "HIGH_PRAYERS_AND_FLOWER_BOXES",
+            "name": "High prayers and flower boxes",
+            "description": null,
+            "leaf": true,
+            "parentId": "DECORATION_AND_PLANTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "JARS_AND_POTS",
+            "name": "Jars and pots",
+            "description": null,
+            "leaf": true,
+            "parentId": "DECORATION_AND_PLANTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "PLANTS_AND_TREES",
+            "name": "Plants and trees",
+            "description": null,
+            "leaf": true,
+            "parentId": "DECORATION_AND_PLANTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "EXTERIOR_LIGHTS",
+            "name": "Exterior lights",
+            "description": null,
+            "leaf": true,
+            "parentId": "DECORATION_AND_PLANTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "WATER_GAMES",
+            "name": "Water Games",
+            "description": null,
+            "leaf": true,
+            "parentId": "DECORATION_AND_PLANTS",
+            "attributeLinks": []
+        },
+        {
+            "id": "GARDEN_FURNITURE_AND_BARBECUE",
+            "name": "Garden furniture and barbecue",
+            "description": null,
+            "leaf": false,
+            "parentId": "GARDEN",
+            "attributeLinks": []
+        },
+        {
+            "id": "TABLE_AND_BENCH",
+            "name": "Table and bench",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_FURNITURE_AND_BARBECUE",
+            "attributeLinks": []
+        },
+        {
+            "id": "GRILL_AND_GRILL_ACCESSORIES",
+            "name": "Grill and grill accessories",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_FURNITURE_AND_BARBECUE",
+            "attributeLinks": []
+        },
+        {
+            "id": "GARDEN_CUSHIONS",
+            "name": "Garden Cushions",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_FURNITURE_AND_BARBECUE",
+            "attributeLinks": []
+        },
+        {
+            "id": "CUSHION_BOXES",
+            "name": "Cushion boxes",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_FURNITURE_AND_BARBECUE",
+            "attributeLinks": []
+        },
+        {
+            "id": "PATIO_FURNITURE",
+            "name": "Patio furniture",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_FURNITURE_AND_BARBECUE",
+            "attributeLinks": []
+        },
+        {
+            "id": "HAMMOCKS",
+            "name": "Hammocks",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_FURNITURE_AND_BARBECUE",
+            "attributeLinks": []
+        },
+        {
+            "id": "AWNINGS_AND_ACCESSORIES",
+            "name": "Awnings and accessories",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_FURNITURE_AND_BARBECUE",
+            "attributeLinks": []
+        },
+        {
+            "id": "PARASOLS",
+            "name": "Parasols",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_FURNITURE_AND_BARBECUE",
+            "attributeLinks": []
+        },
+        {
+            "id": "PARASOL_BASES",
+            "name": "Parasol bases",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_FURNITURE_AND_BARBECUE",
+            "attributeLinks": []
+        },
+        {
+            "id": "PAVILIONS",
+            "name": "Pavilions",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_FURNITURE_AND_BARBECUE",
+            "attributeLinks": []
+        },
+        {
+            "id": "PATIO_HEATERS",
+            "name": "Patio heaters",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_FURNITURE_AND_BARBECUE",
+            "attributeLinks": []
+        },
+        {
+            "id": "TERRACE_COVER",
+            "name": "Terrace Cover",
+            "description": null,
+            "leaf": true,
+            "parentId": "GARDEN_FURNITURE_AND_BARBECUE",
+            "attributeLinks": []
+        },
+        {
+            "id": "APPLIANCES",
+            "name": "Appliances",
+            "description": null,
+            "leaf": false,
+            "parentId": "root",
+            "attributeLinks": []
+        },
+        {
+            "id": "WASHING_MACHINES_AND_TUMBLERS",
+            "name": "Washing machines and tumblers",
+            "description": null,
+            "leaf": false,
+            "parentId": "APPLIANCES",
+            "attributeLinks": []
+        },
+        {
+            "id": "WASHING_MACHINES",
+            "name": "Washing machines",
+            "description": null,
+            "leaf": true,
+            "parentId": "WASHING_MACHINES_AND_TUMBLERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "CONDENSER_TUMBLE_DRYER",
+            "name": "Condenser tumble dryer",
+            "description": null,
+            "leaf": true,
+            "parentId": "WASHING_MACHINES_AND_TUMBLERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "DRYING_CABINETS",
+            "name": "Drying Cabinets",
+            "description": null,
+            "leaf": true,
+            "parentId": "WASHING_MACHINES_AND_TUMBLERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "STOVES_AND_COOKERS",
+            "name": "Stoves and cookers",
+            "description": null,
+            "leaf": true,
+            "parentId": "WASHING_MACHINES_AND_TUMBLERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "GLASS_CERAMIC_COOKERS",
+            "name": "Glass ceramic cookers",
+            "description": null,
+            "leaf": true,
+            "parentId": "WASHING_MACHINES_AND_TUMBLERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "INDUCTION_COOKERS",
+            "name": "Induction cookers",
+            "description": null,
+            "leaf": true,
+            "parentId": "WASHING_MACHINES_AND_TUMBLERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "GAS_COOKERS",
+            "name": "Gas cookers",
+            "description": null,
+            "leaf": true,
+            "parentId": "WASHING_MACHINES_AND_TUMBLERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "DISHWASHERS",
+            "name": "Dishwashers",
+            "description": null,
+            "leaf": false,
+            "parentId": "APPLIANCES",
+            "attributeLinks": []
+        },
+        {
+            "id": "INTEGRATED_DISHWASHER",
+            "name": "Integrated dishwasher",
+            "description": null,
+            "leaf": true,
+            "parentId": "DISHWASHERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "TABLE_DISHWASHERS",
+            "name": "Table dishwashers",
+            "description": null,
+            "leaf": true,
+            "parentId": "DISHWASHERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "FREE_STANDING_DISHWASHERS",
+            "name": "Free standing dishwashers",
+            "description": null,
+            "leaf": true,
+            "parentId": "DISHWASHERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "FRIDGE_AND_FREEZER",
+            "name": "Fridge and freezer",
+            "description": null,
+            "leaf": true,
+            "parentId": "DISHWASHERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "REFRIGERATORS",
+            "name": "Refrigerators",
+            "description": null,
+            "leaf": true,
+            "parentId": "DISHWASHERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "FRIDGE_FREEZERS",
+            "name": "Fridge / freezers",
+            "description": null,
+            "leaf": true,
+            "parentId": "DISHWASHERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "WINE_COOLERS",
+            "name": "Wine Coolers",
+            "description": null,
+            "leaf": true,
+            "parentId": "DISHWASHERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "DOUBLE_DOOR_FRIDGES",
+            "name": "Double door fridges",
+            "description": null,
+            "leaf": true,
+            "parentId": "DISHWASHERS",
+            "attributeLinks": []
+        },
+        {
+            "id": "OVENS",
+            "name": "Ovens",
+            "description": null,
+            "leaf": false,
+            "parentId": "APPLIANCES",
+            "attributeLinks": []
+        },
+        {
+            "id": "BUILD_IN_OVENS",
+            "name": "Build in ovens",
+            "description": null,
+            "leaf": true,
+            "parentId": "OVENS",
+            "attributeLinks": []
+        },
+        {
+            "id": "COMBI_OVENS",
+            "name": "Combi Ovens",
+            "description": null,
+            "leaf": true,
+            "parentId": "OVENS",
+            "attributeLinks": [
+                {
+                    "id": "ASSET_BRAND_LOGO",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ]
+        },
+        {
+            "id": "STEAM_OVENS",
+            "name": "Steam Ovens",
+            "description": null,
+            "leaf": true,
+            "parentId": "OVENS",
+            "attributeLinks": [
+                {
+                    "id": "ASSET_BRAND_LOGO",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ]
+        },
+        {
+            "id": "FUN_AND_GAMES",
+            "name": "Fun and games",
+            "description": null,
+            "leaf": false,
+            "parentId": "root",
+            "attributeLinks": []
+        },
+        {
+            "id": "BOARD_GAMES",
+            "name": "Board games",
+            "description": null,
+            "leaf": true,
+            "parentId": "FUN_AND_GAMES",
+            "attributeLinks": []
+        },
+        {
+            "id": "OUTDOOR_GAMES",
+            "name": "Outdoor games",
+            "description": null,
+            "leaf": true,
+            "parentId": "FUN_AND_GAMES",
+            "attributeLinks": []
+        },
+        {
+            "id": "TOYS",
+            "name": "Toys",
+            "description": null,
+            "leaf": true,
+            "parentId": "FUN_AND_GAMES",
+            "attributeLinks": []
+        },
+        {
+            "id": "PERSONAL_CARE",
+            "name": "Personal Care",
+            "description": null,
+            "leaf": false,
+            "parentId": "root",
+            "attributeLinks": []
+        },
+        {
+            "id": "SHAMPOO",
+            "name": "Shampoo",
+            "description": null,
+            "leaf": true,
+            "parentId": "PERSONAL_CARE",
+            "attributeLinks": []
+        },
+        {
+            "id": "CONDITIONER",
+            "name": "Conditioner",
+            "description": null,
+            "leaf": true,
+            "parentId": "PERSONAL_CARE",
+            "attributeLinks": []
+        },
+        {
+            "id": "LOTION",
+            "name": "Lotion",
+            "description": null,
+            "leaf": true,
+            "parentId": "PERSONAL_CARE",
+            "attributeLinks": []
+        },
+        {
+            "id": "SHAVING_CREAM",
+            "name": "Shaving Cream",
+            "description": null,
+            "leaf": true,
+            "parentId": "PERSONAL_CARE",
+            "attributeLinks": []
+        },
+        {
+            "id": "SHAVERS",
+            "name": "Shavers",
+            "description": null,
+            "leaf": true,
+            "parentId": "PERSONAL_CARE",
+            "attributeLinks": []
+        },
+        {
+            "id": "CREAM",
+            "name": "Cream",
+            "description": null,
+            "leaf": true,
+            "parentId": "PERSONAL_CARE",
+            "attributeLinks": []
+        },
+        {
+            "id": "PERFUME",
+            "name": "Perfume",
+            "description": null,
+            "leaf": true,
+            "parentId": "PERSONAL_CARE",
+            "attributeLinks": []
+        },
+        {
+            "id": "SOAP",
+            "name": "Soap",
+            "description": null,
+            "leaf": true,
+            "parentId": "PERSONAL_CARE",
+            "attributeLinks": []
+        },
+        {
+            "id": "TOOTHPASTE",
+            "name": "Toothpaste",
+            "description": null,
+            "leaf": true,
+            "parentId": "PERSONAL_CARE",
+            "attributeLinks": []
+        },
+        {
+            "id": "NAIL_POLISH",
+            "name": "Nail Polish",
+            "description": null,
+            "leaf": true,
+            "parentId": "PERSONAL_CARE",
+            "attributeLinks": []
+        },
+        {
+            "id": "MAKEUP",
+            "name": "Makeup",
+            "description": null,
+            "leaf": true,
+            "parentId": "PERSONAL_CARE",
+            "attributeLinks": []
+        },
+        {
+            "id": "HOUSEHOLD_ESSENTIALS",
+            "name": "Household Essentials",
+            "description": null,
+            "leaf": false,
+            "parentId": "root",
+            "attributeLinks": []
+        },
+        {
+            "id": "PAPER_PLASTIC",
+            "name": "Paper & Plastic",
+            "description": null,
+            "leaf": true,
+            "parentId": "HOUSEHOLD_ESSENTIALS",
+            "attributeLinks": []
+        },
+        {
+            "id": "BABY",
+            "name": "Baby",
+            "description": null,
+            "leaf": false,
+            "parentId": "root",
+            "attributeLinks": []
+        },
+        {
+            "id": "DIAPERS",
+            "name": "Diapers",
+            "description": null,
+            "leaf": true,
+            "parentId": "BABY",
+            "attributeLinks": []
+        },
+        {
+            "id": "BABY_FOOD",
+            "name": "Food",
+            "description": null,
+            "leaf": true,
+            "parentId": "BABY",
+            "attributeLinks": []
+        },
+        {
+            "id": "PACKAGING",
+            "name": "Packaging",
+            "description": null,
+            "leaf": true,
+            "parentId": "root",
+            "attributeLinks": [
+                {
+                    "id": "PACKAGING",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "GROSS_WEIGHT",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "HEIGHT",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "DEPTH",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "WIDTH",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "DANGEROUS_CONTENT",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "PACKAGING_LEVEL",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ]
+        }
+    ],
+    "attributes": [
+        {
+            "id": "GLN",
+            "name": "GLN",
+            "description": "Enter GLN for supplier.",
+            "type": {
+                "id": "gtin",
+                "restriction": {
+                    "parameters": {
+                        "gtinSizes": "[13]"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES",
+                "__PACKAGING_IDENTIFIERS"
+            ]
+        },
+        {
+            "id": "DESCRIPTION",
+            "name": "Description",
+            "description": "A detailed description of the product. This will be presented to the customer on the webshop and in marketing material. No more than 300 charachters allowed.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {
+                        "maxLength": "300"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES",
+                "__LISTVIEW",
+                "__ATTRIBUTE_FILTER"
+            ]
+        },
+        {
+            "id": "PRODUCT_TITLE",
+            "name": "Product Title",
+            "description": "A descriptive title used for SEO and displayed in prominent locations. No more than 200 charachters allowed.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {
+                        "maxLength": "200"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES",
+                "__LISTVIEW",
+                "__ATTRIBUTE_FILTER"
+            ]
+        },
+        {
+            "id": "DESCRIPTION_ML",
+            "name": "Multilanguage Description",
+            "description": "Multilangual detailed description of the product.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {
+                        "maxLength": "300"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES",
+                "__LISTVIEW"
+            ]
+        },
+        {
+            "id": "COUNTRY_OF_ORIGIN",
+            "name": "Country of origin",
+            "description": "Select a country from the list. If the wanted country is not on the list, select other. ",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [
+                        "United States of America",
+                        "Denmark",
+                        "Poland",
+                        "Norway",
+                        "Sweden",
+                        "United Kingdom",
+                        "Germany",
+                        "France",
+                        "Spain",
+                        "China",
+                        "India",
+                        "Japan",
+                        "Mexico",
+                        "Brazil",
+                        "Thailand",
+                        "Cambodia",
+                        "Vietnam"
+                    ],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES",
+                "__LISTVIEW"
+            ]
+        },
+        {
+            "id": "MERCHANT_CATEGORY",
+            "name": "Select your Home Depot Online Merchant/Category",
+            "description": "Please select a Merchant/Category if you want a specific Merchant to review your products once submitted.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [
+                        "D21/22 - LUMBER, LADDERS, CONCRETE, FENCING, METAL PRODUCTS, GYPSUM (Merchant: Delante Hamilton)",
+                        "D22 - ROOFING, VENTILATION, SIDING (Merchant: Joseph Downey)",
+                        "D23/59S - STORAGE & ORGANIZATION AND WINDOW TREATMENTS (Merchant: Taryn Dominie)",
+                        "D23F - CARPET, AREA RUGS/MATS, VINYL FLOORING (Merchant: Courtney Semkuley)",
+                        "D23F - FLOORING, FLOORING CLEANING, CEILINGS, INSTALLATION (Merchant: Deana Thornton)",
+                        "D24 - PAINT, CAULKS, PRIMERS, SOLVANTS/SEALERS, PAINT TOOLS, PATCHING & REPAIR (Merchant: Christine Hein)",
+                        "D25H - BOOTS AND WORK WEAR (Merchant: Andrius Labanauskas)",
+                        "D25H - BUILDERS/CABINET/CLOSET HARDWARE, LABELS/PLAQUES (Merchant: Madhuri Giri)",
+                        "D25H - SAFETY/SECURITY, DOOR LOCKS, PNEUMATIC FASTENERS, COMPRESSERS/AIR TOOLS, FASTENERS (Merchant: Sara Harbarger)",
+                        "D25T - AUTOMOTIVE (Merchant: William Cody)",
+                        "D25T - HAND/JOB SITE TOOLS, GARAGE, LUBRICANTS, GENERATORS, PORTABLE POWER (Merchant: Matt Brown)",
+                        "D26P - PLUMBING, WATER HEATERS, HVAC, WATER TREATMENTS, PLUMBING REPAIR, PIPS and PUMPS (Merchant:  Ken Johnson)",
+                        "D27E - ELECTRICAL, HOME THEATER, CIRUCIT PROTECTION/CONDUCTORS, PORTABLE HEATING, ELECTRICAL TOOLS/ACCESSORIES (Merchant: Jennifer Morford)",
+                        "D27L - CEILING FANS (Merchant: Amanda Crump)",
+                        "D27L - INTERIOR and EXTERIOR LIGHTING (Merchant: Brian Sheehy)",
+                        "D27L - LIGHT BULBS (Merchant: Jennifer Tate)",
+                        "D27L - LIGHTING (Merchant:  Brian Sheehy)",
+                        "D28I - DISPOSABLE TABLEWARE (Merchant: Kristen Little)",
+                        "D28I - GRILLS,FIREPLACES, STOVES (Merchant: Abigail Hearn)",
+                        "D28I - OUTDOOR POWER AND GENERATORS (Merchant: Jennifer Poole)",
+                        "D28I - PATIO FURNITURE, DINNING, UMBRELLAS, CUSHIONS, OUTDOOR GRILLS, FIREPLACE and GAS LOGS (Merchant: Eva Rodriguez)",
+                        "D28I - PATIO, WATER GARDENING, BOOKS (Merchant:  Jennifer Jarrett)",
+                        "D28I - POOL (Merchant: Alena Prochnow)",
+                        "D28I - WATERING, GARDENING TOOLS, FOOD, STORAGE BUILDINGS, CLEANING, OUTDOOR RECREATION, AND INSTALLED STRUCTURES, PUBLICATIONS (Merchant: Neal Patel)",
+                        "D28O - DECORATIVE HOLIDAY (Merchant: Kelie Charles)",
+                        "D28O - HARDSCAPES, PET SUPPLIES (Merchant: Chrysten Strachan)",
+                        "D28O - LAWN, FERTILIZER, LIVE GOODS (Merchant: Brittney Sheffield)",
+                        "D29 - SMALL ELECTRICS, HOUSEWARES, PORTALBE DRINKWARE (Merchant: Robert Wilburn)",
+                        "D29A - APPLIANCES (Merchant:  Jessica Campbell)",
+                        "D29A - DISPOSERS, FLOORCARE, AIR QUALITY, APPLIANCE PARTS (Merchant: Joie Markes)",
+                        "D29A - FLOORCARE, AIR QUALITY, APPLIANCE PARTS (Merchant: Joie Markes)",
+                        "D29A - REFRIGERATION, COOKING, DELIVERY, APPLIANCE INSTALLATION, DISHWASHERS (Merchant: Jawad Ahmed)",
+                        "D29B - COUNTERTOPS, SINKS, SINK HARDWARE/PLUMBING, CABINETS, KITCHEN INSTALLATIONS (Merchant: Andrea Blair)",
+                        "D29B - DINNERWARE, LUGGAGE (Merchant:  Christa Endler)",
+                        "D29B - FAUCETS, BATH ACCESSORIES, VANITIES, SHOWER/TUB FIXTURES and PARTS (Merchant: Josef Pettus)",
+                        "D29B - KITCHEN AND BATH HOUSEWARES (Merchant:  Robert Wilburn)",
+                        "D29B - TABLETOP, DINNERWARE (Merchant: Gregory Allgeyer)",
+                        "D29B - WATER FILTER CARTRIDGES, SALT, WATER SOFTENERS, S/O, and UNDER SINK WATER FILTERS (Merchant: Kevin Pineda)",
+                        "D29B/59S - LUGGAGE, DÉCOR TEXTILES, WALLPAPER (Merchant: Christa Endler)",
+                        "D30 - MILLWORK (Merchant: Matthew Wells)",
+                        "D59S - DECOR TEXTILES (Merchant:  Christa Endler)",
+                        "D59S - HOME DECOR AND WALL DECOR (Merchant: Cassie West)",
+                        "D59S - INTERIOR FURNITURE (Merchant: Jackie Millazzo)",
+                        "D59S - STORAGE & ORGANIZATION AND WINDOW TREATMENTS (Merchant: Amber Hall)"
+                    ],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "COLOR",
+            "name": "Color",
+            "description": "Select the color that matches the product best from the list.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [
+                        "Beige",
+                        "Black",
+                        "Blue",
+                        "Brown",
+                        "Green",
+                        "Grey",
+                        "Multicolored",
+                        "Off-White",
+                        "Orange",
+                        "Pink",
+                        "Purple",
+                        "Red",
+                        "Turquoise",
+                        "White",
+                        "Yellow"
+                    ],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES",
+                "__LISTVIEW"
+            ]
+        },
+        {
+            "id": "PRICE",
+            "name": "Price",
+            "description": "Enter the price of the product. Remember to fill out the currency column.",
+            "type": {
+                "id": "decimal",
+                "restriction": {
+                    "parameters": {
+                        "minValue": "0",
+                        "minFraction": "2",
+                        "maxFraction": "2"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "PAYMENT",
+                "__LISTVIEW"
+            ]
+        },
+        {
+            "id": "STYLE_ID",
+            "name": "Style ID",
+            "description": "Enter the style ID of the product. This value is used to group clothing according to their family.",
+            "type": {
+                "id": "integer",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "CURRENCY",
+            "name": "Currency",
+            "description": "Please select the correct currency from the list.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [
+                        "USD",
+                        "DKK",
+                        "EUR",
+                        "PLN",
+                        "GBP",
+                        "NOK",
+                        "SEK"
+                    ],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "PAYMENT",
+                "__LISTVIEW"
+            ]
+        },
+        {
+            "id": "SELLABLE_FROM",
+            "name": "Sellable from",
+            "description": "Please enter a date that you want the product to be available from. No value means that is should be available now.",
+            "type": {
+                "id": "date",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "SELLABLE_IN_STORE",
+            "name": "Sellable in store",
+            "description": "Choose whether or not the product is sellable in the physical store.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [
+                        "Yes",
+                        "No"
+                    ],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "PAYMENT"
+            ]
+        },
+        {
+            "id": "SELLABLE_ONLINE",
+            "name": "Sellable online",
+            "description": "Choose whether or not the product is sellable on the webshop.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [
+                        "Yes",
+                        "No"
+                    ],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "PAYMENT"
+            ]
+        },
+        {
+            "id": "PRODUCTION_YEAR",
+            "name": "Production year",
+            "description": "The year the product was produced.",
+            "type": {
+                "id": "integer",
+                "restriction": {
+                    "parameters": {
+                        "minValue": "1900"
+                    },
+                    "listOfValues": [],
+                    "patterns": [
+                        {
+                            "pattern": "^\\d{4}$",
+                            "message": "Please enter a 4 digit number."
+                        }
+                    ]
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "ACCOUNT_DISCRIMINATOR",
+            "name": "Account",
+            "description": "Account used to submit product to channel. If empty, default will be used.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {
+                        "clientSpecificListOfValues": "accountList"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "MEASURE_CHEST",
+            "name": "Chest",
+            "description": "Measurement from one armpit to the other.",
+            "type": {
+                "id": "fraction",
+                "restriction": {
+                    "parameters": {
+                        "minValue": "0"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": [
+                    "unece.unit.INH",
+                    "unece.unit.CMT"
+                ]
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "SIZEGUIDE"
+            ]
+        },
+        {
+            "id": "MEASURE_LENGTH",
+            "name": "Length",
+            "description": "Measurement from the top to the bottom.",
+            "type": {
+                "id": "fraction",
+                "restriction": {
+                    "parameters": {
+                        "minValue": "0"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": [
+                    "unece.unit.INH",
+                    "unece.unit.CMT"
+                ]
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "SIZEGUIDE"
+            ]
+        },
+        {
+            "id": "MEASURE_SHOULDER",
+            "name": "Shoulder",
+            "description": "Measurement from one shoulder to the other",
+            "type": {
+                "id": "fraction",
+                "restriction": {
+                    "parameters": {
+                        "minValue": "0"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "SIZEGUIDE"
+            ]
+        },
+        {
+            "id": "SIZE",
+            "name": "Size",
+            "description": "Select a size from the list.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [
+                        "XXS",
+                        "XS",
+                        "S",
+                        "M",
+                        "L",
+                        "XL",
+                        "XXL",
+                        "XXXL",
+                        "38",
+                        "39",
+                        "40",
+                        "41",
+                        "42",
+                        "43",
+                        "44",
+                        "45"
+                    ],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "SUBSTITUTED_BY",
+            "name": "Substituted by",
+            "description": "Reference to a product that substitute the current product in case of supply shortage.",
+            "type": {
+                "id": "reference",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "PROMOTIONAL_DATES",
+            "name": "Promotional dates",
+            "description": "Please input the dates that the product is allowed promotions and / or discounts.",
+            "type": {
+                "id": "date",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "PRIMARY_ASSET",
+            "name": "Primary image",
+            "description": "Primary image of the product.",
+            "type": {
+                "id": "asset",
+                "restriction": {
+                    "parameters": {
+                        "contentTypes": "[\"image/jpeg\",\"image/png\",\"application/pdf\"]",
+                        "minPixelWidth": "200",
+                        "minPixelHeight": "200"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "ASSETS"
+            ]
+        },
+        {
+            "id": "ASSET_FRONT",
+            "name": "Front",
+            "description": "Image displaying front of product.",
+            "type": {
+                "id": "asset",
+                "restriction": {
+                    "parameters": {
+                        "contentTypes": "[\"image/*\",\"application/pdf\"]",
+                        "minPixelWidth": "200",
+                        "minPixelHeight": "200"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "ASSETS"
+            ]
+        },
+        {
+            "id": "ASSET_BRAND_LOGO",
+            "name": "Brand Logo",
+            "description": "Image displaying logo of the product brand. Min size restriction is 100x100, max size restriction 300x300",
+            "type": {
+                "id": "asset",
+                "restriction": {
+                    "parameters": {
+                        "contentTypes": "[\"image/*\"]",
+                        "minPixelWidth": "100",
+                        "minPixelHeight": "100",
+                        "maxPixelWidth": "300",
+                        "maxPixelHeight": "300"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "ASSETS"
+            ]
+        },
+        {
+            "id": "ASSET_BACK",
+            "name": "Back",
+            "description": "Image displaying back of product.",
+            "type": {
+                "id": "asset",
+                "restriction": {
+                    "parameters": {
+                        "contentTypes": "[\"image/jpeg\",\"image/png\",\"application/pdf\"]",
+                        "minPixelWidth": "200",
+                        "minPixelHeight": "200"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "ASSETS"
+            ]
+        },
+        {
+            "id": "ASSET_DETAIL",
+            "name": "Detail",
+            "description": "Image displaying a detail of product.",
+            "type": {
+                "id": "asset",
+                "restriction": {
+                    "parameters": {
+                        "contentTypes": "[\"image/jpeg\",\"image/png\",\"application/pdf\"]",
+                        "minPixelWidth": "200",
+                        "minPixelHeight": "200"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "ASSETS"
+            ]
+        },
+        {
+            "id": "ASSET_CONTEXT",
+            "name": "Context",
+            "description": "Image displaying the product in context.",
+            "type": {
+                "id": "asset",
+                "restriction": {
+                    "parameters": {
+                        "contentTypes": "[\"image/jpeg\",\"image/png\",\"application/pdf\"]",
+                        "minPixelWidth": "200",
+                        "minPixelHeight": "200"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "ASSETS"
+            ]
+        },
+        {
+            "id": "GTIN",
+            "name": "GTIN",
+            "description": "Global Trade Item Number (GTIN)",
+            "type": {
+                "id": "gtin",
+                "restriction": {
+                    "parameters": {
+                        "gtinSizes": "[14]"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES",
+                "__ATTRIBUTE_FILTER",
+                "__PACKAGING_IDENTIFIERS",
+                "__PRODUCT_IDENTIFIERS"
+            ]
+        },
+        {
+            "id": "PACKAGING",
+            "name": "Package content",
+            "description": "Reference to the content",
+            "type": {
+                "id": "reference",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": []
+            },
+            "attributeLinks": [
+                {
+                    "id": "QUANTITY_ID",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ],
+            "groupIds": []
+        },
+        {
+            "id": "PACKAGING_PATH",
+            "name": "Packaging Path",
+            "description": "Composite attribute containing information on your packaging structure. This is only usable if you have a flat packaging structure, otherwise please use the Package content attribute.",
+            "type": {
+                "id": "packaging",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": []
+            },
+            "attributeLinks": [
+                {
+                    "id": "QUANTITY_ID",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "GTIN",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "GROSS_WEIGHT",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "HEIGHT",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "DEPTH",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "WIDTH",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "DANGEROUS_CONTENT",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "PACKAGING_LEVEL",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "SELLABLE_UNIT",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "QUANTITY_ID",
+            "name": "Quantity",
+            "description": "Quantity of the content",
+            "type": {
+                "id": "integer",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "__PACKAGING_IDENTIFIERS"
+            ]
+        },
+        {
+            "id": "GROSS_WEIGHT",
+            "name": "Gross Weight (lb)",
+            "description": "The total weight of the shipping container in pounds.",
+            "type": {
+                "id": "decimal",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "HEIGHT",
+            "name": "Height (in)",
+            "description": "Overall hight of shipping container in inches.",
+            "type": {
+                "id": "decimal",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "DEPTH",
+            "name": "Depth (in)",
+            "description": "Overall depth of shipping container in inches.",
+            "type": {
+                "id": "decimal",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "WIDTH",
+            "name": "Width (in)",
+            "description": "Overall width of shipping container in inches.",
+            "type": {
+                "id": "decimal",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "DANGEROUS_CONTENT",
+            "name": "Dangerous content?",
+            "description": "Does the case contain dangerous content? Please refer to http://www.fedex.com/dangerousgoods/ for more information.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [
+                        "yes",
+                        "no"
+                    ],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "DEFAULT_SUBMIT_OUTCOME_ID",
+            "name": "Submission outcome",
+            "description": "Used for testing - specify the outcome of you submission.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [
+                        "Pending",
+                        "Sent",
+                        "Success",
+                        "Error",
+                        "Rejected",
+                        "Returned",
+                        "None"
+                    ],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "DEFAULT_SUBMIT_MESSAGE_ID",
+            "name": "Submission message",
+            "description": "Used for testing - specify the error message upon submission.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "PACKAGING_LEVEL",
+            "name": "Packaging level",
+            "description": "Determines the level of the package in the packaging heirarchy",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [
+                        "EA",
+                        "CA",
+                        "PK",
+                        "PL"
+                    ],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "__PACKAGING_IDENTIFIERS"
+            ]
+        },
+        {
+            "id": "SELLABLE_UNIT",
+            "name": "Sellable Unit?",
+            "description": "Is the item labeled or authorized for sale to consumers at this packaging level? (not necessarily sold in store)",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [
+                        "yes",
+                        "no"
+                    ],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": [
+                "__PACKAGING_IDENTIFIERS"
+            ]
+        },
+        {
+            "id": "MATERIAL_BREAKDOWN",
+            "name": "Material breakdown",
+            "description": "Materials included in the product, please specify the type and amount.",
+            "type": {
+                "id": "composite",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": []
+            },
+            "attributeLinks": [
+                {
+                    "id": "MATERIAL",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MATERIAL_PERCENTAGE",
+                    "optional": false,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MATERIAL_FEATURES",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MATERIAL_IMAGE",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MATERIAL_NOTES",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MATERIAL_DETAILS",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MATERIAL_PROPERTIES",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "MATERIAL",
+            "name": "Material",
+            "description": "Select the material / fabric of the product.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [
+                        "Cotton",
+                        "Leather",
+                        "Linen",
+                        "Metal",
+                        "Plastic",
+                        "Rubber",
+                        "Synthetic Textile",
+                        "Unclassified",
+                        "Wool"
+                    ],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": []
+        },
+        {
+            "id": "MATERIAL_PERCENTAGE",
+            "name": "Material amount",
+            "description": "Enter the material amount in percent.",
+            "type": {
+                "id": "decimal",
+                "restriction": {
+                    "parameters": {
+                        "maxValue": "100",
+                        "minValue": "0"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": []
+        },
+        {
+            "id": "MATERIAL_FEATURES",
+            "name": "Material features",
+            "description": "Please specify the features of the material, select all that apply",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [
+                        "Fire resistant",
+                        "Waterproof",
+                        "Dust resistant",
+                        "Bulletproof",
+                        "Indestructible",
+                        "Anvil proof"
+                    ],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": []
+        },
+        {
+            "id": "MATERIAL_IMAGE",
+            "name": "Material image",
+            "description": "Photo / illustration of the material",
+            "type": {
+                "id": "asset",
+                "restriction": {
+                    "parameters": {
+                        "contentTypes": "[\"image/jpeg\",\"image/png\",\"application/pdf\"]",
+                        "minPixelWidth": "200",
+                        "minPixelHeight": "200"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": []
+        },
+        {
+            "id": "MATERIAL_NOTES",
+            "name": "Material notes",
+            "description": "Add any additional relevant notes about the material.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": []
+        },
+        {
+            "id": "MATERIAL_PROPERTIES_NAME",
+            "name": "Property Name",
+            "description": null,
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": []
+        },
+        {
+            "id": "MATERIAL_PROPERTIES_VALUE",
+            "name": "Property Value",
+            "description": null,
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": []
+        },
+        {
+            "id": "MATERIAL_PROPERTIES",
+            "name": "Material Properties",
+            "description": null,
+            "type": {
+                "id": "composite",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": []
+            },
+            "attributeLinks": [
+                {
+                    "id": "MATERIAL_PROPERTIES_NAME",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MATERIAL_PROPERTIES_VALUE",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ],
+            "groupIds": [
+                "UNGROUPED_ATTRIBUTES"
+            ]
+        },
+        {
+            "id": "MATERIAL_DETAILS",
+            "name": "Material details",
+            "description": "More details for the material",
+            "type": {
+                "id": "composite",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": []
+            },
+            "attributeLinks": [
+                {
+                    "id": "MATERIAL_DESCRIPTION",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MATERIAL_SECONDARY_IMAGE",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MATERIAL_DETAILS_TYPE",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ],
+            "groupIds": []
+        },
+        {
+            "id": "MATERIAL_DESCRIPTION",
+            "name": "Description",
+            "description": "A detailed description of the material.",
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": []
+        },
+        {
+            "id": "MATERIAL_SECONDARY_IMAGE",
+            "name": "Secondary image",
+            "description": "A secondary image of the material.",
+            "type": {
+                "id": "asset",
+                "restriction": {
+                    "parameters": {
+                        "contentTypes": "[\"image/jpeg\",\"image/png\",\"application/pdf\"]",
+                        "minPixelWidth": "400",
+                        "minPixelHeight": "400"
+                    },
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": []
+        },
+        {
+            "id": "MATERIAL_DETAILS_TYPE",
+            "name": "Material Details Type",
+            "description": null,
+            "type": {
+                "id": "composite",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": true,
+                "units": []
+            },
+            "attributeLinks": [
+                {
+                    "id": "MATERIAL_DETAILS_TYPE_APPLICABILITY",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                },
+                {
+                    "id": "MATERIAL_DETAILS_TYPE_NOTE",
+                    "optional": true,
+                    "listOfValuesFilter": [],
+                    "appliesTo": "ALL"
+                }
+            ],
+            "groupIds": []
+        },
+        {
+            "id": "MATERIAL_DETAILS_TYPE_APPLICABILITY",
+            "name": "Applicability",
+            "description": null,
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": []
+        },
+        {
+            "id": "MATERIAL_DETAILS_TYPE_NOTE",
+            "name": "Note",
+            "description": null,
+            "type": {
+                "id": "string",
+                "restriction": {
+                    "parameters": {},
+                    "listOfValues": [],
+                    "patterns": []
+                },
+                "isFamily": false,
+                "multiValue": false,
+                "units": []
+            },
+            "attributeLinks": [],
+            "groupIds": []
+        }
+    ],
+    "attributeGroups": [
+        {
+            "id": "SIZEGUIDE",
+            "name": "Sizeguide",
+            "description": "Detailed measurements of the product.",
+            "attributeIds": []
+        },
+        {
+            "id": "PAYMENT",
+            "name": "Payment options",
+            "description": "Price and currency options.",
+            "attributeIds": []
+        },
+        {
+            "id": "ASSETS",
+            "name": "Assets",
+            "description": "All assets related to the product.",
+            "attributeIds": []
+        },
+        {
+            "id": "UNGROUPED_ATTRIBUTES",
+            "name": "Ungrouped attributes",
+            "description": "",
+            "attributeIds": []
+        },
+        {
+            "id": "__LISTVIEW",
+            "name": "List view",
+            "description": "All categories that shall be visible while using list view.",
+            "attributeIds": []
+        },
+        {
+            "id": "__ATTRIBUTE_FILTER",
+            "name": "Attribute filter",
+            "description": "List of attributes that can be used to filter products.",
+            "attributeIds": []
+        },
+        {
+            "id": "__PACKAGING_IDENTIFIERS",
+            "name": "Packaging Identifiers",
+            "description": "",
+            "attributeIds": []
+        },
+        {
+            "id": "__PRODUCT_IDENTIFIERS",
+            "name": "List of attributes that can be used as identifiers in retrieval process.",
+            "description": "",
+            "attributeIds": []
+        }
+    ],
+    "unitsOfMeasure": {
+        "unece.unit.KWT": {
+            "id": "unece.unit.KWT",
+            "name": "kW"
+        },
+        "unece.unit.BTH": {
+            "id": "unece.unit.BTH",
+            "name": "Btu/h"
+        },
+        "unece.unit.CEL": {
+            "id": "unece.unit.CEL",
+            "name": "°C"
+        },
+        "unece.unit.AWG": {
+            "id": "unece.unit.AWG",
+            "name": "AWG"
+        },
+        "unece.unit.80": {
+            "id": "unece.unit.80",
+            "name": "psi"
+        },
+        "unece.unit.KGM": {
+            "id": "unece.unit.KGM",
+            "name": "kg"
+        },
+        "unece.unit.FAH": {
+            "id": "unece.unit.FAH",
+            "name": "°F"
+        },
+        "unece.unit.AMP": {
+            "id": "unece.unit.AMP",
+            "name": "A"
+        },
+        "unece.unit.85": {
+            "id": "unece.unit.85",
+            "name": "ft.lb."
+        },
+        "unece.unit.MLT": {
+            "id": "unece.unit.MLT",
+            "name": "ml"
+        },
+        "unece.unit.ONZ": {
+            "id": "unece.unit.ONZ",
+            "name": "oz"
+        },
+        "unece.unit.G2": {
+            "id": "unece.unit.G2",
+            "name": "gal (US)/min"
+        },
+        "unece.unit.BTU": {
+            "id": "unece.unit.BTU",
+            "name": "Btu"
+        },
+        "unece.unit.MIL": {
+            "id": "unece.unit.MIL",
+            "name": "MIL"
+        },
+        "unece.unit.VLT": {
+            "id": "unece.unit.VLT",
+            "name": "V"
+        },
+        "unece.unit.LBR": {
+            "id": "unece.unit.LBR",
+            "name": "lb"
+        },
+        "unece.unit.MTR": {
+            "id": "unece.unit.MTR",
+            "name": "m"
+        },
+        "unece.unit.CMT": {
+            "id": "unece.unit.CMT",
+            "name": "cm"
+        },
+        "unece.unit.HJ": {
+            "id": "unece.unit.HJ",
+            "name": "hp"
+        },
+        "unece.unit.MMT": {
+            "id": "unece.unit.MMT",
+            "name": "mm"
+        },
+        "unece.unit.WTT": {
+            "id": "unece.unit.WTT",
+            "name": "W"
+        },
+        "unece.unit.IA": {
+            "id": "unece.unit.IA",
+            "name": "In lbs"
+        },
+        "unece.unit.INK": {
+            "id": "unece.unit.INK",
+            "name": "in²"
+        },
+        "unece.unit.MIN": {
+            "id": "unece.unit.MIN",
+            "name": "min"
+        },
+        "bottle": {
+            "id": "bottle",
+            "name": "bottles"
+        },
+        "unece.unit.FTK": {
+            "id": "unece.unit.FTK",
+            "name": "ft²"
+        },
+        "unece.unit.MCD": {
+            "id": "unece.unit.MCD",
+            "name": "mcd"
+        },
+        "unece.unit.HUR": {
+            "id": "unece.unit.HUR",
+            "name": "h"
+        },
+        "unece.unit.GLL": {
+            "id": "unece.unit.GLL",
+            "name": "gal (US)"
+        },
+        "unece.unit.DD": {
+            "id": "unece.unit.DD",
+            "name": "°"
+        },
+        "unece.unit.YRD": {
+            "id": "unece.unit.YRD",
+            "name": "yd"
+        },
+        "unece.unit.C31": {
+            "id": "unece.unit.C31",
+            "name": "mW"
+        },
+        "unece.unit.INH": {
+            "id": "unece.unit.INH",
+            "name": "in"
+        },
+        "unece.unit.FTQ": {
+            "id": "unece.unit.FTQ",
+            "name": "cu ft"
+        },
+        "unece.unit.RPM": {
+            "id": "unece.unit.RPM",
+            "name": "RPM"
+        },
+        "unece.unit.QT": {
+            "id": "unece.unit.QT",
+            "name": "qt (US)"
+        },
+        "unece.unit.FOT": {
+            "id": "unece.unit.FOT",
+            "name": "ft"
+        },
+        "unece.unit.MON": {
+            "id": "unece.unit.MON",
+            "name": "mo"
+        },
+        "unece.unit.OZA": {
+            "id": "unece.unit.OZA",
+            "name": "fl oz (US)"
+        },
+        "unece.unit.CU": {
+            "id": "unece.unit.CU",
+            "name": "cup (US)"
+        },
+        "unece.unit.LTR": {
+            "id": "unece.unit.LTR",
+            "name": "l"
+        }
+    }
+}
